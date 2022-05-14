@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&family=Red+Hat+Display:wght@500&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 15px;
+    --prim-dark-blue: hsl(233, 47%, 7%);
+    --prim-sat-blue: hsl(244, 38%, 16%);
+    --prim-violet: hsl(277, 64%, 61%);
+  
+    --neu-white: hsl(0, 0%, 100%);
+    --neu-trans-white: hsla(0, 0%, 100%, 0.75);
+    --neu-more-trans-white: hsla(0, 0%, 100%, 0.6);
+    --soft-violet: hsl(277, 64%, 61%);
+}
+
+
+
+body {
+    height: 100vh;
+    background: var(--prim-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    height: 600px;
+
+    
+}
+
+.card {
+    
+    background: var(--prim-sat-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 85px;
+    border-radius: 12px;
+    
+
+    
+    
+}
+
+.textPrincipal {
+    
+    color: var(--neu-white);
+    font-size: 1.7rem;   
+
+}
+
+.textPrincipal p {
+    color: var(--neu-more-trans-white);
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+
+.stats {
+
+
+    color: var(--neu-white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+    
+}
+
+.stats h1 {
+    margin: 0px;
+    font-size: 3rem;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats span {
+    color: var(--neu-more-trans-white);
+}
+
+.image {
+    width: 50%;
+    background: url(/images/image-header-desktop.jpg)no-repeat;
+    background-color: var(--soft-violet);
+    background-blend-mode: multiply;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.card .info {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textPrincipal h1 {
+    margin: 0px;
+}
+
+.textPrincipal span {
+    color: var(--prim-violet);
+}
+
+@media screen and (max-width: 1089px) {
+    .image {
+        display: none;
+    }
+
+    .card {
+    
+    
+    background: var(--prim-sat-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 85px;
+    border-radius: 12px;
+
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .card {
+    
+    
+        background: var(--prim-sat-blue);
+        font-family: 'Red Hat Display', sans-serif;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 85px;
+        border-radius: 12px;
+    
+        }
+
+
+}
+
+@media screen and (max-width: 549px) {
+    .card {
+    
+    
+        background: var(--prim-sat-blue);
+        font-family: 'Red Hat Display', sans-serif;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 60px;
+        border-radius: 12px;
+    
+        }
+
+    
+}
